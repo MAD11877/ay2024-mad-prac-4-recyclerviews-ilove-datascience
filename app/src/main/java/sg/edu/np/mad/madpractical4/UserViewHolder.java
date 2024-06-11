@@ -8,16 +8,18 @@ import androidx.recyclerview.widget.RecyclerView;
 
 //import sg.edu.np.mad.prac4.R;
 
-public class UserViewHolder extends RecyclerView.ViewHolder{
-    ImageView smallimage;
-    ImageView bigimage;
-    TextView name;
-    TextView description;
-    public UserViewHolder(View itemView){
+public class UserViewHolder extends RecyclerView.ViewHolder {
+    ImageView imageViewSmall;
+    ImageView imageViewLarge;
+    TextView textViewName;
+    TextView textViewDescription;
+
+    public UserViewHolder(View itemView) {
         super(itemView);
-        smallimage= itemView.findViewById(R.id.imageView3);
-        bigimage =itemView.findViewById(R.id.imageView4);
-        name = itemView.findViewById(R.id.textView3);
-        description =itemView.findViewById(R.id.textView4);
+        imageViewSmall = itemView.findViewById(R.id.imageViewSmall);
+        imageViewLarge = itemView.findViewById(R.id.imageViewLarge);
+        textViewName = itemView.findViewById(R.id.textViewName);
+        textViewDescription = itemView.findViewById(R.id.textViewDescription);
     }
 }
+
